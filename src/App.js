@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { Recipes } from "./components/Recipes";
 
 function App() {
+  /**
+   * 1) stan dla przepisów
+   * 2) pobranie przepisów z następującego endpointu: https://dummyjson.com/recipes
+   * 3) wykonsolownie rezultatu
+   */
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="container">
+      <article>
+        <h1>Welcome to the world of Recipes</h1>
+      </article>
+      <Recipes />
+    </main>
   );
 }
 
